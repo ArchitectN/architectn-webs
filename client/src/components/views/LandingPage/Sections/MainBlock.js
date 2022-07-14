@@ -1,12 +1,12 @@
 import React from 'react'
 import './MainBlock.scss';
 import { useSelector } from 'react-redux';
-import useReactRouter from 'use-react-router';
+//"import useReactRouter from 'use-react-router'; (deprecated)",
 
 const goToVoc = require('../../../../assets/images/btn_goToVoc.png')
 
 function MainBlock(props) {
-    const { history, location, match } = useReactRouter();
+// "const { history, location, match } = useReactRouter();",
 
     const user = useSelector(state => state.user)
 

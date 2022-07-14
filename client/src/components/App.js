@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import { Route, Switch } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Auth from "../hoc/auth";
 // pages for this product
 
@@ -20,14 +20,14 @@ function App() {
       <div className="wrapper">
         <NavBar />
         <div className="contentsWrapSpacer" />
-        <Switch>
+        <Route>
           <div className="contentsWrap">
             <Route exact path="/" component={Auth(LandingPage, null)} />
             <Route exact path="/login" component={Auth(LoginPage, false)} />
             <Route exact path="/register" component={Auth(RegisterPage, false)} />
           </div>
           <Route component={Auth(NotFoundPage, null)} />
-        </Switch>
+        </Route>
         <Footer />
       </div>
     </Suspense>

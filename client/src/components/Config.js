@@ -1,7 +1,7 @@
-// export const BACK_SERVER_URL = 'http://localhost:5000'  //localhost
+export const BACK_SERVER_URL = 'http://localhost:5000'  //localhost
 
 
-//////////////////////////// For Header Configs //////////////////////////////////
+//////////////////////////// For Header Configs //////////////////////////////////:
 const config = {
     headers: {
         'Content-type': 'application/json'
@@ -10,7 +10,7 @@ const config = {
 
 const token = localStorage.getItem('x_token')
 const tokenExp = localStorage.getItem('x_tokenExp')
-// If token, add to headers
+// If token, add to headers:
 if (token && tokenExp) {
     config.headers['x_token'] = token;
     config.headers['x_tokenExp'] = tokenExp;

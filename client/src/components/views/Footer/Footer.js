@@ -7,7 +7,7 @@ import {
 function Footer() {
     return (
         <footer style={{ textAlign: 'center', padding: '1rem' }}>
-            By John Ahn   <SmileTwoTone />
+            By Nicholas Hong  <SmileTwoTone />
 
         </footer>
     )
